@@ -53,19 +53,8 @@ Esta aplicación sencilla permite realizar varias operaciones contra un backend 
 
 #Esctructura de archivos del proyecto
 
-bnka/
-|-- app/
-|   |-- __init__.py
-|   |-- models.py
-|   |-- routes.py
-|   |-- services.py
-|-- config/
-|   |-- __init__.py
-|   |-- config.py
-|-- tests/
-|   |-- __init__.py
-|   |-- test_routes.py
-|-- run.py
-|-- requirements.txt
+![image](https://github.com/davoweb3/ejerciciobk/assets/105182325/d4d6f2b3-a987-4225-bda6-7357aae5e724)
+
+
 
 
