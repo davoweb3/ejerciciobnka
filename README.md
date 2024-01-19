@@ -1,6 +1,6 @@
 # MonoRepo de Aplicación Bancaria Básica (Test)
 
-Esta aplicación sencilla permite realizar varias operaciones contra un backend levantado en Python + Flask y corre sobre un servidor renderizado como un webservice. El frontend funciona sobre un LAMP básico, utilizando MySQL como base de datos en un servidor remoto.
+Esta aplicación sencilla permite realizar varias operaciones contra un backend levantado en Python + Flask y corre sobre un servidor en render.com como un webservice. El frontend funciona sobre un LAMP básico, utilizando MySQL como base de datos en un servidor remoto.
 
 **NOTA:**
 1. El servidor donde se aloja es gratuito, por lo que los tiempos de respuesta pueden ser lentos en cada petición.Si al realizar una peticion se recibe un error de lectura de base de datos, porfavor regresar y reintentar.
