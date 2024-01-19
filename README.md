@@ -3,7 +3,7 @@
 Esta aplicación sencilla permite realizar varias operaciones contra un backend levantado en Python + Flask y corre sobre un servidor en render.com como un webservice. El frontend funciona sobre un LAMP básico, utilizando MySQL como base de datos en un servidor remoto.
 
 **NOTA:**
-1. El servidor donde se aloja es gratuito, por lo que los tiempos de respuesta pueden ser lentos en cada petición.Si al realizar una peticion se recibe un error de lectura de base de datos, porfavor regresar y reintentar. Probablemente la compatibilidad de la version de PHP del host es 7.4 y no es posible cambiarla por el nivel de servicio ( pago ).
+1. El servidor donde se aloja es gratuito, por lo que los tiempos de respuesta pueden ser lentos en cada petición.Si al realizar una peticion se recibe un error de lectura de base de datos, porfavor regresar y reintentar. Probablemente la compatibilidad de la version de PHP del host es 7.4 y no es posible cambiarla por el nivel de servicio ( pago ). El inconveniente es transitorio no se presenta siempre.
 2. El backend (Python) se encuentra en un plan de render gratuito.
 3. No incorpora certificado SSL por ser un proyecto de prueba.
 4. Por la naturaleza de prueba de esta aplicacion , las conexiones a la BDD estan expuestas. No estan implementadas seguridades 
