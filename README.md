@@ -52,20 +52,20 @@ Esta aplicación sencilla permite realizar varias operaciones contra un backend 
  - pip install Flask-SQLAlchemy
 
 #Esctructura de archivos del proyecto
+
 bnka/
 |-- app/
-|   |-- __init__.py
-|   |-- models.py
-|   |-- routes.py
-|   |-- services.py
+| |-- init.py
+| |-- models.py
+| |-- routes.py
+| |-- services.py
 |-- config/
-|   |-- __init__.py
-|   |-- config.py
+| |-- init.py
+| |-- config.py
 |-- tests/
-|   |-- __init__.py
-|   |-- test_routes.py
+| |-- init.py
+| |-- test_routes.py
 |-- run.py
 |-- requirements.txt
-
 
 
