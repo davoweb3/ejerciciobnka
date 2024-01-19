@@ -3,7 +3,7 @@
 Esta aplicación sencilla permite realizar varias operaciones contra un backend levantado en Python + Flask y corre sobre un servidor renderizado como un webservice. El frontend funciona sobre un LAMP básico, utilizando MySQL como base de datos en un servidor remoto.
 
 **NOTA:**
-1. El servidor donde se aloja es gratuito, por lo que los tiempos de respuesta pueden ser lentos en cada petición.
+1. El servidor donde se aloja es gratuito, por lo que los tiempos de respuesta pueden ser lentos en cada petición.Si al realizar una peticion se recibe un error de lectura de base de datos, porfavor regresar y reintentar.
 2. El backend (Python) se encuentra en un plan de render gratuito, por lo que entra en suspensión y se requiere ejecutar la primera orden y regresa (10 s).
 3. No incorpora certificado SSL por ser un proyecto de prueba.
 
