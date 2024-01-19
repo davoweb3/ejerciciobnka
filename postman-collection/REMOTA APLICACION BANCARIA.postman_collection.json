@@ -14,7 +14,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombres\": \"El Toto377773333\",\r\n    \"email\": \"arf@ejemp3337777lo.com\",\r\n    \"username\": \"eltoto_23277777777232\",\r\n    \"password\": \"contraseña\",\r\n    \"cuenta\": \"1232aaaaggggg\",\r\n    \"saldo\": 15000.0\r\n}\r\n",
+					"raw": "{\r\n    \"nombres\": \"Armando Celi\",\r\n    \"email\": \"arceli@gmail.com\",\r\n    \"username\": \"aceli\",\r\n    \"password\": \"123456\",\r\n    \"cuenta\": \"09876652\",\r\n    \"saldo\": 15000.0\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -43,7 +43,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"remitente_username\": \"edgarr2ss3\",\r\n  \"beneficiario_username\": \"pinkfloyd\",\r\n  \"amount\": 100.0\r\n}\r\n",
+					"raw": "{\r\n  \"remitente_username\": \"lorenzo\",\r\n  \"beneficiario_username\": \"pinkfloyd\",\r\n  \"amount\": 50.25\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -109,7 +109,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://bnka-aplicacion-bancaria.onrender.com/delete_user/30",
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/delete_user/43",
 					"protocol": "https",
 					"host": [
 						"bnka-aplicacion-bancaria",
@@ -118,7 +118,7 @@
 					],
 					"path": [
 						"delete_user",
-						"30"
+						"43"
 					]
 				}
 			},
@@ -131,7 +131,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombres\": \"Pepe Trueno\",\r\n    \"email\": \"recargado@ejemplo.com\"\r\n    \r\n}\r\n",
+					"raw": "{\r\n    \"nombres\": \"Pepe Perez\",\r\n    \"email\": \"recargados@ejemplo.com\"\r\n    \r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -172,7 +172,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://bnka-aplicacion-bancaria.onrender.com/get_user/73",
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/get_user/54",
 					"protocol": "https",
 					"host": [
 						"bnka-aplicacion-bancaria",
@@ -181,7 +181,7 @@
 					],
 					"path": [
 						"get_user",
-						"73"
+						"54"
 					]
 				}
 			},
