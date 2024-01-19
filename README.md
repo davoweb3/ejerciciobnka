@@ -55,16 +55,16 @@ Esta aplicación sencilla permite realizar varias operaciones contra un backend 
 
 bnka/
 |-- app/
-| |-- init.py
-| |-- models.py
-| |-- routes.py
-| |-- services.py
+|   |-- __init__.py
+|   |-- models.py
+|   |-- routes.py
+|   |-- services.py
 |-- config/
-| |-- init.py
-| |-- config.py
+|   |-- __init__.py
+|   |-- config.py
 |-- tests/
-| |-- init.py
-| |-- test_routes.py
+|   |-- __init__.py
+|   |-- test_routes.py
 |-- run.py
 |-- requirements.txt
 
