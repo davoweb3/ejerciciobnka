@@ -53,7 +53,8 @@ Esta aplicación sencilla permite realizar varias operaciones contra un backend 
 
 #Esctructura de archivos del proyecto
 
-![image](https://github.com/davoweb3/ejerciciobk/assets/105182325/d4d6f2b3-a987-4225-bda6-7357aae5e724)
+
+![image](https://github.com/davoweb3/ejerciciobk/assets/105182325/d7f6f588-21b2-4fb3-935c-11d30c853bf1)
 
 
 
