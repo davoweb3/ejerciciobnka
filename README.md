@@ -7,8 +7,8 @@ Esta aplicación sencilla permite realizar varias operaciones contra un backend 
 2. El backend (Python) se encuentra en un plan de render gratuito, por lo que entra en suspensión y se requiere ejecutar la primera orden y regresa (10 s).
 3. No incorpora certificado SSL por ser un proyecto de prueba.
 
-Link para pruebas: [http://davoramirez.online/](http://davoramirez.online/)
-#Una coleccion de postman esta disponible en el monorepo
+-Link para pruebas: [http://davoramirez.online/](http://davoramirez.online/)
+-Una coleccion de postman esta disponible en el monorepo
 
 ## Arquitectura
 
