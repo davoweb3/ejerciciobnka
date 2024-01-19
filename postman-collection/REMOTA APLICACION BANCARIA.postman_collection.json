@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "a58293ca-ca0a-4f70-b864-7bd021dc144f",
+		"name": "REMOTA APLICACION BANCARIA",
+		"description": "### 1.Crear un nuevo usuario:\n\n- **Endpoint:** `POST http://localhost:5000/create_user`\n- jsonCopy code{ \"nombres\": \"Nombre Ejemplo\", \"email\": \"[correo@ejemplo.com](https://mailto:correo@ejemplo.com)\", \"username\": \"usuario_ejemplo\", \"password\": \"contraseña\", \"cuenta\": \"1234567890\", \"saldo\": 1000.0}\n    \n\n### 2\\. Actualizar un usuario existente:\n\n- **Endpoint:** `PUT http://localhost:5000/update_user/` (reemplaza con el ID del usuario que deseas actualizar)\n- jsonCopy code{ \"nombres\": \"Nuevo Nombre\", \"email\": \"[nuevo_correo@ejemplo.com](https://mailto:nuevo_correo@ejemplo.com)\", \"saldo\": 1500.0}\n    \n\n### 3\\. Eliminar un usuario:\n\n- **Endpoint:** `DELETE http://localhost:5000/delete_user/` (reemplaza con el ID del usuario que deseas eliminar)\n    \n\n### 4\\. Obtener información de un usuario:\n\n- **Endpoint:** `GET http://localhost:5000/get_user/` (reemplaza con el ID del usuario que deseas obtener)\n    \n\n### 5\\. Listar todos los usuarios:\n\n- **Endpoint:** `GET http://localhost:5000/list_users/` (reemplaza con el ID del usuario que deseas obtener)\n    \n\n### 6\\. Simular una transferencia :\n\n- **Endpoint:** POST [http://127.0.0.1:5000/transfer_balance/](http://127.0.0.1:5000/transfer_balance/)  \n    { \"remitente_username\": \"edgarr2ss3\", \"beneficiario_username\": \"usuario_2\", \"amount\": 100.0}\n    \n\n### 7\\. Simular un depósito en cuenta por parte del cajero\n\n- **Endpoint:** POST [http://127.0.0.1:5000/deposit](http://127.0.0.1:5000/transfer_balance/)  \n    { \"username\": \"edgarr2ss3\", \"amount\": 100.0}",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12831157"
+	},
+	"item": [
+		{
+			"name": "crear_usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\": \"El Toto377773333\",\r\n    \"email\": \"arf@ejemp3337777lo.com\",\r\n    \"username\": \"eltoto_23277777777232\",\r\n    \"password\": \"contraseña\",\r\n    \"cuenta\": \"1232aaaaggggg\",\r\n    \"saldo\": 15000.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/create_user",
+					"protocol": "https",
+					"host": [
+						"bnka-aplicacion-bancaria",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"create_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transferir_saldo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"remitente_username\": \"edgarr2ss3\",\r\n  \"beneficiario_username\": \"pinkfloyd\",\r\n  \"amount\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/transfer_balance",
+					"protocol": "https",
+					"host": [
+						"bnka-aplicacion-bancaria",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"transfer_balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposito_saldo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"pinkfloyd\",\r\n  \"amount\": 100.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/deposit",
+					"protocol": "https",
+					"host": [
+						"bnka-aplicacion-bancaria",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar_usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/delete_user/30",
+					"protocol": "https",
+					"host": [
+						"bnka-aplicacion-bancaria",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"delete_user",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar_usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\": \"Pepe Trueno\",\r\n    \"email\": \"recargado@ejemplo.com\"\r\n    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/update_user/48",
+					"protocol": "https",
+					"host": [
+						"bnka-aplicacion-bancaria",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"update_user",
+						"48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener_usuario_existente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/get_user/73",
+					"protocol": "https",
+					"host": [
+						"bnka-aplicacion-bancaria",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"get_user",
+						"73"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar_usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bnka-aplicacion-bancaria.onrender.com/list_users",
+					"protocol": "https",
+					"host": [
+						"bnka-aplicacion-bancaria",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"list_users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
