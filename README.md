@@ -8,6 +8,7 @@ Esta aplicación sencilla permite realizar varias operaciones contra un backend 
 3. No incorpora certificado SSL por ser un proyecto de prueba.
 
 Link para pruebas: [http://davoramirez.online/](http://davoramirez.online/)
+Una coleccion de postman esta disponible en el monorepo
 
 ## Arquitectura
 
@@ -38,4 +39,5 @@ Link para pruebas: [http://davoramirez.online/](http://davoramirez.online/)
 ### Base de Datos: MySQL
 
 ## Diagrama de la Arquitectura
+![image](https://github.com/davoweb3/ejerciciobk/assets/105182325/2d2a2836-aa78-402a-9cac-878f458a6280)
 
