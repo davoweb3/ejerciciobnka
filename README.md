@@ -42,53 +42,30 @@ Esta aplicación sencilla permite realizar varias operaciones contra un backend 
 ## Diagrama de la Arquitectura
 ![image](https://github.com/davoweb3/ejerciciobk/assets/105182325/2d2a2836-aa78-402a-9cac-878f458a6280)
 
-### 1. Crear un nuevo usuario:
-**Endpoint:** `POST http://localhost:5000/create_user`
+## Ejecucion 
+-Clonar este repo
+-Instalar dependencias 
+  -pip install virtualenv
+  -virtualenv venv
+ - source venv/bin/activate 
+ - pip install Flask
+ - pip install Flask-SQLAlchemy
 
-```json
-{
-  "nombres": "Nombre Ejemplo",
-  "email": "correo@ejemplo.com",
-  "username": "usuario_ejemplo",
-  "password": "contraseña",
-  "cuenta": "1234567890",
-  "saldo": 1000.0
-}
-2. Actualizar un usuario existente:
-Endpoint: PUT http://localhost:5000/update_user/ (reemplaza con el ID del usuario que deseas actualizar)
+#Esctructura de archivos del proyecto
+bnka/
+|-- app/
+|   |-- __init__.py
+|   |-- models.py
+|   |-- routes.py
+|   |-- services.py
+|-- config/
+|   |-- __init__.py
+|   |-- config.py
+|-- tests/
+|   |-- __init__.py
+|   |-- test_routes.py
+|-- run.py
+|-- requirements.txt
 
-json
-Copy code
-{
-  "nombres": "Nuevo Nombre",
-  "email": "nuevo_correo@ejemplo.com",
-  "saldo": 1500.0
-}
-3. Eliminar un usuario:
-Endpoint: DELETE http://localhost:5000/delete_user/ (reemplaza con el ID del usuario que deseas eliminar)
 
-4. Obtener información de un usuario:
-Endpoint: GET http://localhost:5000/get_user/ (reemplaza con el ID del usuario que deseas obtener)
 
-5. Listar todos los usuarios:
-Endpoint: GET http://localhost:5000/list_users/
-
-6. Simular una transferencia:
-Endpoint: POST http://127.0.0.1:5000/transfer_balance/
-
-json
-Copy code
-{
-  "remitente_username": "edgarr2ss3",
-  "beneficiario_username": "usuario_2",
-  "amount": 100.0
-}
-7. Simular un depósito en cuenta por parte del cajero:
-Endpoint: POST http://127.0.0.1:5000/deposit
-
-json
-Copy code
-{
-  "username": "edgarr2ss3",
-  "amount": 100.0
-}
