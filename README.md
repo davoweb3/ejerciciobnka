@@ -53,6 +53,8 @@ En caso de no funcionar el primer link, Tambien esta alojado en este servidor [h
  - pip install Flask
  - pip install Flask-SQLAlchemy
 
+## Tiene CI/CD con Netlify (frontend) y render (backend)
+
 #Esctructura de archivos del proyecto
 
 ![image](https://github.com/davoweb3/ejerciciobk/assets/105182325/eac0b79c-98e3-4bf2-8eeb-52c090475472)
