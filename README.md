@@ -1,17 +1,21 @@
 # MonoRepo de Aplicación Bancaria Básica (Test)
 
-Esta aplicación sencilla permite realizar varias operaciones contra un backend levantado en Python + Flask y corre sobre un servidor en render.com como un webservice. El frontend funciona sobre un LAMP básico, utilizando MySQL como base de datos en un servidor remoto.
+Esta aplicación sencilla permite realizar varias operaciones contra un backend levantado en Python + Flask y corre sobre un servidor en render.com como un webservice. El frontend funciona sobre un LAMP en LigthSAIL utilizando MySQL como base de datos en un servidor remoto tambien bajo LigthSail 
 
 **NOTA:**
 1. Se ha experimentado un lag en la primera peticion cuando el servidor donde se alojan los webservices  se encuentra en inactividad, es normal por el nivel de servicio free que se dispone en este proveedor.
 2. El backend (Python) se encuentra en render. www.render.com
 3. No incorpora certificado SSL por ser un proyecto de prueba.
-4. Por la naturaleza de prueba de esta aplicacion , las conexiones a la BDD estan expuestas. No estan implementadas seguridades 
+4. Por la naturaleza de prueba de esta aplicacion , las conexiones a la BDD estan expuestas. No estan implementadas seguridades
+
+**ACTUALIZADO:**
+1) Solucionado el lag, migrado a servidor de pago en render, no downtime
+2) La nueva base de datos esta alojada en una instancia de LigthSail
+3) SSL no se requiere en una prueba ( no impacta su rendimiento)
+4) La conexion de la base esta directamente ( no recomendado bajo ninguna circunstancia en produccion) 
+
 
 -Link para pruebas: [https://18.233.158.250/](https://18.233.158.250/)  (AWS LIGHTSAIL)
-
-En caso de no funcionar el primer link, Tambien esta alojado en este servidor [http://davoramirez.online/](http://davoramirez.online/) 
--Una coleccion de postman esta disponible en el monorepo para realizar pruebas directamente contra el backend.
 
 ## Arquitectura
 
@@ -53,7 +57,7 @@ En caso de no funcionar el primer link, Tambien esta alojado en este servidor [h
  - pip install Flask
  - pip install Flask-SQLAlchemy
 
-## Tiene CI/CD con Netlify (frontend) y render (backend)
+## Tiene CI/CD con Ligthsail ( frontend) y render (backend) 
 
 #Esctructura de archivos del proyecto
 
